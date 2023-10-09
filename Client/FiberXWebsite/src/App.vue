@@ -18,6 +18,7 @@
               loading: false, state: false, modal_state: false,
               msg: '', status : '', modal_status: '', 
               load_string : 'LOADING', store_id: 'STR-00001',
+              y: 0,
           }
         },
         components: { RouterView, Loader, Alert, NavBar, FooterArea, ModalBase, Scroller },
@@ -45,19 +46,24 @@
           },
         },
         created: async function() {
+        },
+        mounted: function() {
+          const mainSection = document.getElementById('ScrollArea');
+          const vim = this;
+          mainSection.addEventListener('scroll', function() { vim.y = mainSection.scrollTop; });
         }
     }
 </script>
 
 <template>
-  <section id="AppBody" class="relative w-screen h-screen overflow-hidden">
+  <section id="AppBody" class="relative w-screen h-screen overflow-x-hidden">
       <ModalBase :modal_status="modal_status" :modal_state="modal_state" ref="ModalBase" />
       <Alert :state="state" :msg="msg" :status="status" />
       <Loader :state="loading" :loadingString="load_string" />
       <header>
-          <NavBar  />
+          <NavBar :y="y"  />
       </header>
-      <main>
+      <main id="ScrollArea">
           <RouterView />
       </main>
       <footer>

@@ -53,19 +53,24 @@ const content_data = {
             "text": "Scroll Down"
         }
     },
-    "Welcome": {
+    "HomeWelcome": {
         "welcome_title_text": "Innovate, Integrate, Inspire.",
         "welcome_sub_text": "Welcome to Fiber x, Bringing you a world where technology empowers  organiztions and individuals to reach new heights of productivity  & success.",
         "img": "/src/assets/img/bg/welcome_character.svg"
     },
-    "About": {
+    "AboutWelcome": {
         "title_text": "About FiberX Innovations",
         "sub_text": "FiberX Innovations is a dynamic IT enterprise at the forefront of technological advancement. We are committed to driving innovation and excellence in the creation, design, and manufacturing of IT solutions. With a relentless focus on quality and customer satisfaction, we are poised to make a profound impact in the industry.",
         "img": "/src/assets/img/bg/welcome_character.svg"
     },
-    "Services": {
+    "ServicesWelcome": {
         "title_text": "FiberX Innovations Services",
         "sub_text": "At FiberX Innovations, we extend a warm welcome to you, our valued guest, as you embark on a journey into the world of innovation and technology.",
+        "img": "/src/assets/img/bg/welcome_character.svg"
+    },
+    "ProductWelcome": {
+        "title_text": "Our Products Portfolio!",
+        "sub_text": "Discover a world of possibilities at FiberX Innovations. Our product offerings are designed to elevate your digital experience and empower you with cutting-edge solutions. Whether you're seeking innovative software products, high-quality hardware solutions, or a range of professional services, you've come to the right place.",
         "img": "/src/assets/img/bg/welcome_character.svg"
     },
     "Description_1": {
@@ -121,6 +126,7 @@ const content_data = {
     "ServicesList": {
         "title_text": "Our Services",
         "sub_text": "FiberX Innovations offers a wide range of services, such as:",
+        "img": "/src/assets/img/bg/services_1.svg",
         "services_list" : [
             {"text": "Consultation and Training Services", "link": "/services#form"},
             {"text": "Custom Software Development", "link": "/services#form"},
@@ -129,6 +135,12 @@ const content_data = {
             {"text": "Hardware Supply and Procurement", "link": "/services#form"},
             {"text": "Quality Control & Testing", "link": "/services#form"},
         ]
+    },
+    "ExploreProducts": {
+        "title_text": "Explore Our Products",
+        "sub_text": "The future of technology is not distant; it's at your fingertips. Dive into our product offerings and discover how FiberX Innovations can transform your digital world, opening doors to opportunities you've only dreamed of.",
+        "img": "/src/assets/img/bg/semi_colon_1.svg",
+        "img_gif": "/src/assets/img/bg/explore_products_1.gif"
     },
     
 }

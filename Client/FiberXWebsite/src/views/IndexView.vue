@@ -1,7 +1,8 @@
 <script>
-import Welcome from '../components/Home/Welcome.vue';
+import HomeWelcome from '../components/Home/HomeWelcome.vue';
 import Description_1 from '../components/About/Description_1.vue';
 import ServicesList from '../components/Services/ServicesList.vue';
+import ExploreProducts from '../components/Products/ExploreProducts.vue';
 
 
 export default {
@@ -17,14 +18,15 @@ export default {
         const mainSection = document.getElementById('ScrollArea');
         mainSection.scrollTo(0, 0);
     },
-    components: { Welcome, Description_1, ServicesList },
+    components: { HomeWelcome, Description_1, ServicesList, ExploreProducts },
 }
 </script>
 
 <template>
     <div class="w-full">
-        <Welcome />
+        <HomeWelcome />
         <Description_1 />
         <ServicesList />
+        <ExploreProducts />
     </div>
 </template>

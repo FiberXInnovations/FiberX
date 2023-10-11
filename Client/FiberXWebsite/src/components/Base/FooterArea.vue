@@ -21,7 +21,7 @@
                 </div>
                 <div class="flex md:items-end items-center md:justify-end justify-center">
                     <div v-for="(item, index) in content.social_menu" :key="index" class="p-2 hover:text-[#FFCC00] rounded hover:bg-[#0000003d] text-white hover:cursor-pointer">
-                        <RouterLink :to="item.link" v-html="item.icon"></RouterLink>
+                        <a :href="item.link" target="_blank" v-html="item.icon"></a>
                     </div>
                 </div>
                 

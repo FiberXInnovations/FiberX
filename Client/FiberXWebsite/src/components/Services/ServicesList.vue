@@ -33,6 +33,9 @@ export default {
 
                 </div>
             </div>
+            <div class="w-full items-center justify-center px-4 flex h-[250px] overflow-hidden">
+                <img class="object-fit w-full h-full" :src="content.img" />
+            </div>
         </div>
     </section>
 </template>

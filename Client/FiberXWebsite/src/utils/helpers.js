@@ -20,6 +20,31 @@ class HelperFunctions {
       return false;
     }
   }
+
+  validateName(name) {
+    const bul = this.nameRegex.test(name);
+    return bul;
+  }
+
+  validateNamey(name) {
+    const bul = this.nameyRegex.test(name);
+    return bul;
+  }
+
+  validateTextArea(text) {
+    const bul = ((this.textArearRegex).test(text));
+    return bul
+  }
+
+  validateEmail(email) {
+    const bul = this.emailRegex.test(email);
+    return bul;
+  }
+
+  validateTel(tel) {
+    const bul = this.telRegex.test(tel);
+    return bul;
+  }
 }
 
 export default HelperFunctions

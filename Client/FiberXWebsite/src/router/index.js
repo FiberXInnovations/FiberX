@@ -3,6 +3,7 @@ import IndexView from '../views/IndexView.vue';
 import AboutView from '../views/AboutView.vue';
 import ServicesView from '../views/ServicesView.vue';
 import ProductsView from '../views/ProductsView.vue';
+import ContactUsView from '../views/ContactUsView.vue';
 
 
 const router = createRouter({
@@ -27,7 +28,12 @@ const router = createRouter({
       path: '/products',
       name: 'Products',
       component: ProductsView
-    }
+    },
+    {
+      path: '/contact_us',
+      name: 'Contact',
+      component: ContactUsView
+    },
    
     // {
     //   path: '/:pathMatch(.*)*',

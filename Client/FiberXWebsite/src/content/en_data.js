@@ -9,7 +9,7 @@ const content_data = {
             {"text": "About Us", "link": "/about", "name": "About"},
             {"text": "Services", "link": "/services", "name": "Services"},
             {"text": "Products", "link": "/products", "name": "Products"},
-            {"text": "Contact Us", "link": "/contact", "name": "Contact"}
+            {"text": "Contact Us", "link": "/contact_us", "name": "Contact"}
         ]
     },
     "FooterArea": {
@@ -18,7 +18,7 @@ const content_data = {
             {"text": "About", "link": "/about", "name": "About"},
             {"text": "Services", "link": "/services", "name": "Services"},
             {"text": "Products", "link": "/products", "name": "Products"},
-            {"text": "Contact", "link": "/contact", "name": "Contact"}
+            {"text": "Contact", "link": "/contact_us", "name": "Contact"}
         ],
         "social_menu": [
             {
@@ -56,7 +56,8 @@ const content_data = {
     "HomeWelcome": {
         "welcome_title_text": "Innovate, Integrate, Inspire.",
         "welcome_sub_text": "Welcome to Fiber x, Bringing you a world where technology empowers  organiztions and individuals to reach new heights of productivity  & success.",
-        "img": "/src/assets/img/bg/welcome_character.svg"
+        "img": "/src/assets/img/bg/welcome_character.svg",
+        "btn_text": "Get To Know Us."
     },
     "AboutWelcome": {
         "title_text": "About FiberX Innovations",
@@ -73,6 +74,11 @@ const content_data = {
         "sub_text": "Discover a world of possibilities at FiberX Innovations. Our product offerings are designed to elevate your digital experience and empower you with cutting-edge solutions. Whether you're seeking innovative software products, high-quality hardware solutions, or a range of professional services, you've come to the right place.",
         "img": "/src/assets/img/bg/welcome_character.svg"
     },
+    "ContactUsWelcome": {
+        "title_text": "Get in Touch",
+        "sub_text": "Caring for our clients is at the heart of what we do. Feel free to reach out with your inquiries, suggestions, or feedback, and we'll respond promptly. Let's start a conversation, and together, we'll navigate the digital realm.",
+        "img": "/src/assets/img/bg/welcome_character.svg"
+    },
     "Description_1": {
         "descriptions": [
             {
@@ -81,6 +87,7 @@ const content_data = {
                 "img": "/src/assets/img/bg/description_2_1.svg",
                 "img_text": "About FiberX Innovations image",
                 "title_text": "About FiberX Innovations",
+                "btn_text": "Learn More...",
                 "sub_text": "FiberX Innovations is a dynamic IT enterprise at the forefront of technological advancement. We are committed to driving innovation and excellence in the creation, design, and manufacturing of IT solutions. With a relentless focus on quality and customer satisfaction, we are poised to make a profound impact in the industry. \n Our vision is inspired by Proverbs 29:18: 'Where there is no vision, the people perish.' At FiberX Innovations, we envision a world where technology empowers individuals and organizations to reach new heights of productivity and success. Our mission, grounded in Matthew 5:16, is to let our technological light shine before others, delivering transformative solutions that illuminate the path to progress.",
             },
             
@@ -123,6 +130,105 @@ const content_data = {
             
         ]
     },
+    "CoreValues": {
+       "title_text": "Our Guiding Principles",
+       "sub_text": "Discover the Core Values that Drive Us. At FiberX Innovations, we are deeply committed to a set of guiding principles that shape our every decision and action. These values are the cornerstone of our identity, defining who we are and how we serve our clients and community.",
+       "core_values": [
+            {
+                "img": "/src/assets/img/core_values/innovation_1.svg",
+                "title_text": "Innovation",
+                "sub_text": "We strive to lead through innovation, driven by Philippians 4:13: 'I can doall things through Christ who strengthens me.' Our objective is to create technology that empowers and uplifts.",
+            },
+            {
+                "img": "/src/assets/img/core_values/customer_1.svg",
+                "title_text": "Customer-Centricity",
+                "sub_text": "Rooted in Luke 6:31 ('Do to others as you would have them do to you'), we prioritize customer satisfaction, aiming to exceed expectations in every interaction.",
+            },
+            {
+                "img": "/src/assets/img/core_values/quality_excellence_1.svg",
+                "title_text": "Quality Excellence",
+                "sub_text": "Guided by Colossians 3:23 ('Whatever you do, work at it with all your heart'), we commit to delivering products and services of the highest quality, exceeding industry standards.",
+            },
+            {
+                "img": "/src/assets/img/core_values/integrity_1.svg",
+                "title_text": "Ethical Integrity",
+                "sub_text": "We adhere to the principles of honesty and integrity outlined in Proverbs 11:3, ensuring our business practices reflect godly values, building trust with all stakeholders.",
+            }
+       ]
+    },
+    "Team": {
+        "title_text": "Our Dedicated Team",
+        "sub_text": "Meet the Faces Behind FiberX Innovations. Our diverse and passionate team is the driving force behind our commitment to innovation and excellence. Get to know the individuals who bring our vision to life and make it their mission to serve you.",
+        "team_mates": [
+             {
+                 "img": "/src/assets/img/core_values/innovation_1.svg",
+                 "name_text": "David Matt-Ojo",
+                 "role_text": "Senior Engineer & Founder"
+             },
+             {
+                 "img": "/src/assets/img/core_values/customer_1.svg",
+                 "name_text": "Team 1",
+                 "role_text": "Team 1"
+             },
+             {
+                 "img": "/src/assets/img/core_values/quality_excellence_1.svg",
+                 "name_text": "Team 1",
+                 "role_text": "Team 1"
+             },
+             {
+                 "img": "/src/assets/img/core_values/integrity_1.svg",
+                 "name_text": "Team 1",
+                 "role_text": "Team 1"
+             },
+             {
+                "img": "/src/assets/img/core_values/innovation_1.svg",
+                "name_text": "Team 1",
+                "role_text": "Team 1"
+            },
+            {
+                "img": "/src/assets/img/core_values/customer_1.svg",
+                "name_text": "Team 1",
+                "role_text": "Team 1"
+            },
+            {
+                "img": "/src/assets/img/core_values/quality_excellence_1.svg",
+                "name_text": "Team 1",
+                "role_text": "Team 1"
+            },
+            {
+                "img": "/src/assets/img/core_values/integrity_1.svg",
+                "name_text": "Team 1",
+                "role_text": "Team 1"
+            }
+
+        ]
+     },
+    "CoreValues": {
+        "title_text": "Our Guiding Principles",
+        "sub_text": "Discover the Core Values that Drive Us. At FiberX Innovations, we are deeply committed to a set of guiding principles that shape our every decision and action. These values are the cornerstone of our identity, defining who we are and how we serve our clients and community.",
+        "core_values": [
+             {
+                 "img": "/src/assets/img/core_values/innovation_1.svg",
+                 "title_text": "Innovation",
+                 "sub_text": "We strive to lead through innovation, driven by Philippians 4:13: 'I can doall things through Christ who strengthens me.' Our objective is to create technology that empowers and uplifts.",
+             },
+             {
+                 "img": "/src/assets/img/core_values/customer_1.svg",
+                 "title_text": "Customer-Centricity",
+                 "sub_text": "Rooted in Luke 6:31 ('Do to others as you would have them do to you'), we prioritize customer satisfaction, aiming to exceed expectations in every interaction.",
+             },
+             {
+                 "img": "/src/assets/img/core_values/quality_excellence_1.svg",
+                 "title_text": "Quality Excellence",
+                 "sub_text": "Guided by Colossians 3:23 ('Whatever you do, work at it with all your heart'), we commit to delivering products and services of the highest quality, exceeding industry standards.",
+             },
+             {
+                 "img": "/src/assets/img/core_values/integrity_1.svg",
+                 "title_text": "Ethical Integrity",
+                 "sub_text": "We adhere to the principles of honesty and integrity outlined in Proverbs 11:3, ensuring our business practices reflect godly values, building trust with all stakeholders.",
+             }
+        ]
+     },
     "ServicesList": {
         "title_text": "Our Services",
         "sub_text": "FiberX Innovations offers a wide range of services, such as:",
@@ -136,12 +242,48 @@ const content_data = {
             {"text": "Quality Control & Testing", "link": "/services#form"},
         ]
     },
+    "ServicesForm": {
+        "title_text": "Service Inquiry Form",
+        "sub_text": "Have questions about our services or need more information? Fill out the form below, and our team will be happy to assist you. Your journey with FiberX Innovations starts here.",
+        "img": "/src/assets/img/bg/contact_us_form_1.svg",
+        
+    },
     "ExploreProducts": {
         "title_text": "Explore Our Products",
         "sub_text": "The future of technology is not distant; it's at your fingertips. Dive into our product offerings and discover how FiberX Innovations can transform your digital world, opening doors to opportunities you've only dreamed of.",
         "img": "/src/assets/img/bg/semi_colon_1.svg",
         "img_gif": "/src/assets/img/bg/explore_products_1.gif"
     },
+    "ContactUsInfo": {
+        "title_text": "Connect with Us",
+        "sub_text": "Here's how to get in touch with FiberX Innovations. Whether you prefer to drop us a message, give us a call, or visit our office, we're always here to assist you. Feel free to reach out and let's start a conversation.",
+        "img": "/src/assets/img/bg/semi_colon_1.svg",
+        "infos": [
+            {
+                "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z' /><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z' /></svg>",
+                "title_text": "Address",
+                "link": "",
+                "sub_text": "Plot 904 sector F FHA Lugbe."
+            },
+            {
+                "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3' /></svg>",
+                "title_text": "Phone",
+                "link": "tel:+234 809 141 4443.",
+                "sub_text": "+234 809 141 4443."
+            },
+            {
+                "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75' /></svg>",
+                "title_text": "Email",
+                "link": "mailto:fiberxinnovations@gmail.com",
+                "sub_text": "fiberxinnovations@gmail.com"
+            }
+        ]
+    },
+    "ContactUsForm": {
+        "title_text": "Talk to Us",
+        "sub_text": "",
+        "img": "/src/assets/img/bg/contact_us_form_1.svg",
+    }
     
 }
 

@@ -17,7 +17,7 @@ export default {
                     <div :class="item.graphics_order == 2 ? 'order-last' : ''" class="w-full md:w-4/12 md:h-full h-[30%] flex items-center justify-center overflow-hidden px-2">
                         <img class="object-fit w-full h-full" :src="item.img" :alt="item.img_text" />
                     </div>
-                    <div :class="item.desc_order == 2 ? 'order-last' : ''" class="w-full md:w-8/12  md:h-full h-[50%] flex flex-col items-center justify-center overflow-hidden">
+                    <div :class="item.desc_order == 2 ? 'order-last' : ''" class="w-full md:w-8/12  md:h-full flex flex-col items-center justify-center overflow-hidden">
                         <h2 class="font-black text-[#1A1A1A] text-[28px] text-center z-[2] w-full">
                             {{  item.title_text }}
                         </h2>

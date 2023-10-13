@@ -1,7 +1,7 @@
 const content_data = {
     "NavBar" : {
         "logo" : { 
-            "img" : "/src/assets/img/Logo/logo_2.png",
+            "img" : "/src/assets/img/logo/logo_2.png",
             "text" : "FiberX Innovations"
         },
         "menu": [
@@ -22,6 +22,11 @@ const content_data = {
         ],
         "social_menu": [
             {
+                "icon": "<svg class='md:w-5 md:h-5 w-2 h-2' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75' /></svg>",
+                "link": "mailto:fiberxinnovations@gmail.com",
+                "text": "Email"
+            },
+            {
                 "icon": "<svg class='md:w-5 md:h-5 w-2 h-2' fill='currentColor' viewBox='0 0 24 24' aria-hidden='true'><path fill-rule='evenodd' d='M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z' clip-rule='evenodd' /></svg>",
                 "link": "",
                 "text": "Facebook"
@@ -40,6 +45,11 @@ const content_data = {
                 "icon": " <svg class='bi bi-telegram md:w-5 md:h-5 w-2 h-2' xmlns='http://www.w3.org/2000/svg' fill='currentColor'  viewBox='0 0 16 16'> <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z'/> </svg>",
                 "link": "",
                 "text": "Telegram",
+            },
+            {
+                "icon": "<svg class='md:w-5 md:h-5 w-2 h-2' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z' /></svg>",
+                "link": "tel:+2348091414443",
+                "text": "Phone",
             }
         ]
     },
@@ -202,7 +212,7 @@ const content_data = {
             }
 
         ]
-     },
+    },
     "CoreValues": {
         "title_text": "Our Guiding Principles",
         "sub_text": "Discover the Core Values that Drive Us. At FiberX Innovations, we are deeply committed to a set of guiding principles that shape our every decision and action. These values are the cornerstone of our identity, defining who we are and how we serve our clients and community.",
@@ -228,6 +238,10 @@ const content_data = {
                  "sub_text": "We adhere to the principles of honesty and integrity outlined in Proverbs 11:3, ensuring our business practices reflect godly values, building trust with all stakeholders.",
              }
         ]
+    },
+    "Slogan": {
+        "title_text": "Where Technology meets Transformation.",
+        "img" : "/src/assets/img/logo/logo_2.png",
      },
     "ServicesList": {
         "title_text": "Our Services",
@@ -253,6 +267,36 @@ const content_data = {
         "sub_text": "The future of technology is not distant; it's at your fingertips. Dive into our product offerings and discover how FiberX Innovations can transform your digital world, opening doors to opportunities you've only dreamed of.",
         "img": "/src/assets/img/bg/semi_colon_1.svg",
         "img_gif": "/src/assets/img/bg/explore_products_1.gif"
+    },
+    "ProductList": {
+        "product_list": [
+            {
+                "graphics_order": 1,
+                "desc_order": 2,
+                "img": "/src/assets/img/products/project_fiyalo_1.svg",
+                "img_text": "Fiyalo - Empowering E-commerce & Events",
+                "title_text": "Fiyalo - Empowering E-commerce & Events",
+                "sub_text": "Fiyalo, our flagship software product, is a versatile eCommerce and event management application designed to cater to three distinct user groups (Users, Creators, Designers). Fiyalo embraces emerging financial trends, allowing transactions in cryptocurrencies. It prioritizes the principle of customer centricity.",
+                "link": "https://fiyalo.com",
+            },
+            {
+                "graphics_order": 2,
+                "desc_order": 1,
+                "img": "/src/assets/img/products/project_fora_script_1.svg",
+                "img_text": "Fora Script - Enlightening Church Presentations",
+                "title_text": "Fora Script - Enlightening Church Presentations",
+                "sub_text": "Fora Script, our second software solution offering, is a video presentation software meticulouslycrafted for churches. It facilitates the display of scriptures, songs, hymns, titles, captions, and preaching points, ushering in a new era of immersive worship experiences .",
+            },
+            {
+                "graphics_order": 1,
+                "desc_order": 2,
+                "img": "/src/assets/img/products/project_fund_flow_1.svg",
+                "img_text": "Fund Flow - Nurturing Financial Growth",
+                "title_text": "Fund Flow - Nurturing Financial Growth",
+                "sub_text": "Fund Flow is an investment application designed to empower users to invest money & achieve profitable outcomes. It reflects our commitment to stewardship and financial wisdom (Proverbs 13:11).",
+            },
+            
+        ]
     },
     "ContactUsInfo": {
         "title_text": "Connect with Us",

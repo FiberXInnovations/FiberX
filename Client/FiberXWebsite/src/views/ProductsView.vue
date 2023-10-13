@@ -1,6 +1,8 @@
 <script>
 import ProductWelcome from '../components/Products/ProductWelcome.vue';
 import ExploreProducts from '../components/Products/ExploreProducts.vue';
+import ProductList from '../components/Products/ProductList.vue';
+import Slogan from '../components/About/Slogan.vue';
 
 
 export default {
@@ -16,7 +18,7 @@ export default {
         const mainSection = document.getElementById('ScrollArea');
         mainSection.scrollTo(0, 0);
     },
-    components: { ProductWelcome, ExploreProducts },
+    components: { ProductWelcome, ExploreProducts, ProductList, Slogan },
 }
 </script>
 
@@ -24,5 +26,7 @@ export default {
     <div class="w-full">
         <ProductWelcome />
         <ExploreProducts />
+        <ProductList />
+        <Slogan />
     </div>
 </template>

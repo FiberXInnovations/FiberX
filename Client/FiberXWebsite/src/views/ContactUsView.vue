@@ -2,6 +2,7 @@
 import ContactUsWelcome from '../components/ContactUs/ContactUsWelcome.vue';
 import ContactUsInfo from '../components/ContactUs/ContactUsInfo.vue';
 import ContactUsForm from '../components/ContactUs/ContactUsForm.vue';
+import Slogan from '../components/About/Slogan.vue';
 
 
 export default {
@@ -17,7 +18,7 @@ export default {
         const mainSection = document.getElementById('ScrollArea');
         mainSection.scrollTo(0, 0);
     },
-    components: { ContactUsWelcome, ContactUsInfo, ContactUsForm },
+    components: { ContactUsWelcome, ContactUsInfo, ContactUsForm, Slogan },
 }
 </script>
 
@@ -26,5 +27,6 @@ export default {
         <ContactUsWelcome />
         <ContactUsInfo />
         <ContactUsForm />
+        <Slogan />
     </div>
 </template>

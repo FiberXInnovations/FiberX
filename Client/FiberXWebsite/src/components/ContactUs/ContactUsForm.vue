@@ -11,13 +11,15 @@ export default {
         return {
             content: this.$root.content_data.ContactUsForm,
             full_name: "", email: "", subject: "", message: "",
-            error_msg: "", title_text: "",
+            error_msg: "", title_text: "", recaptchaToken: null
         };
     },
     methods: {
         showError(msg) { this.error_msg = msg; },
 
         hideError() { this.error_msg = ""; },
+
+        onRecaptchaChange(token) { this.recaptchaToken = token; },
 
         async sendMessage() {
             this.hideError();
@@ -35,9 +37,11 @@ export default {
 
             else if (this.$root.hp.isEmpty(this.message) || !this.$root.hp.validateTextArea(this.message)) { this.showError(`Invalid input for message`); return; }
 
+            else if (this.$root.hp.isEmpty(this.recaptchaToken)) { this.showError(`Invalid Recaptcha Token`); return; }
+
             else {
-                const { full_name, email, subject, message } = this;
-                const form_data = {  full_name, email, subject, message }
+                const { full_name, email, subject, message, recaptchaToken } = this;
+                const form_data = {  full_name, email, subject, message, recaptchaToken, }
 
                 this.$root.loading = true;
                 const res = await contactEmail(form_data);
@@ -45,7 +49,7 @@ export default {
                 const dmsg = status == 'success' ? 'We would be in touch with you shortly. Thank you and have a great day.': 'Sorry, something went wrong please try again later.'
                 this.$root.loading = false;
 
-                this.$root.showAlert(status, msg, 2000, true, true);
+                this.$root.showAlert(status, msg, 2000, false, true);
                 
             }
         }
@@ -107,6 +111,9 @@ export default {
                         <div class="form-group message w-full my-2">
                             <textarea id="message" v-model="message" class="form-control form-control-lg w-full uppercase" rows="7" placeholder="Mensage.."></textarea>
                         </div>
+
+                        <div class="g-recaptcha" data-sitekey="6LeDV5koAAAAANpo0UlcM7X8SrYej7zuRngUqRmD" @change="onRecaptchaChange"></div>
+
 
                         <div v-if="error_msg" class="text-center my-2 w-full flex items-center justify-center bg-red-500 text-black break-word rounded-xl p-2">
                            {{ error_msg }}

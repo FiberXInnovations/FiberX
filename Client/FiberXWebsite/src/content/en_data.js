@@ -327,6 +327,12 @@ const content_data = {
         "title_text": "Talk to Us",
         "sub_text": "",
         "img": "/src/assets/img/bg/contact_us_form_1.svg",
+    },
+    "NotFound": {
+        "title_text": "404 Oops! Page Not Found",
+        "sub_text": "It seems you've taken a detour into uncharted digital territory. The page you're looking for may have ventured off the grid. Please return to our main navigation or use the search bar to find your way back. We're here to assist you on your journey.",
+        "img": "/src/assets/img/bg/welcome_character.svg",
+        "btn_text": "Go Back Home"
     }
     
 }

@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue';
 import ServicesView from '../views/ServicesView.vue';
 import ProductsView from '../views/ProductsView.vue';
 import ContactUsView from '../views/ContactUsView.vue';
+import PageNotFoundView from '../views/PageNotFoundView.vue';
 
 
 const router = createRouter({
@@ -34,12 +35,11 @@ const router = createRouter({
       name: 'Contact',
       component: ContactUsView
     },
-   
-    // {
-    //   path: '/:pathMatch(.*)*',
-    //   name: 'NotFound',
-    //   component: PageNotFoundView,
-    // },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: PageNotFoundView,
+    },
   ]
 })
 

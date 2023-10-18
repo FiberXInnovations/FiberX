@@ -53,17 +53,23 @@ export default {
                 this.$root.showAlert(status, msg, 2000, false, true);
                 
             }
+        },
+
+        renderRecaptcha() {
+            window.grecaptcha.render(this.$el.querySelector('.g-recaptcha'), { sitekey: this.RECAPTCHA_KEY, callback: this.onRecaptchaChange});
         }
     },
     mounted: function() {
         const subject = this.$route.query.subject;
         this.subject = subject ? `Inquiry on ${subject}` : this.subject;
         this.content.title_text =  subject ? `${this.title_text} on ${subject}` : this.content.title_text;
-        window.grecaptcha.render(this.$el.querySelector('.g-recaptcha'), { sitekey: this.RECAPTCHA_KEY, callback: this.onRecaptchaChange});
+        window.onRecaptchaLoaded = () => { this.renderRecaptcha(); };
+        // window.grecaptcha.render(this.$el.querySelector('.g-recaptcha'), { sitekey: this.RECAPTCHA_KEY, callback: this.onRecaptchaChange});
     },
     created: function() { 
         this.content = this.external_content && Object.keys(this.external_content).length > 0 ? this.external_content : this.content;
         this.title_text = this.content.title_text;
+        window.addEventListener('load', this.windowLoadedHandler);
     },
     components: { RouterLink, ContactUsSVGImage },
     watch: {

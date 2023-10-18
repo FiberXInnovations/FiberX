@@ -11,7 +11,8 @@ export default {
         return {
             content: this.$root.content_data.ContactUsForm,
             full_name: "", email: "", subject: "", message: "",
-            error_msg: "", title_text: "", recaptchaToken: null
+            error_msg: "", title_text: "", recaptchaToken: null,
+            RECAPTCHA_KEY: "6LcNI60oAAAAANjEzNHSYEcDUd9OBv7uan2-R9YN"
         };
     },
     methods: {
@@ -58,6 +59,7 @@ export default {
         const subject = this.$route.query.subject;
         this.subject = subject ? `Inquiry on ${subject}` : this.subject;
         this.content.title_text =  subject ? `${this.title_text} on ${subject}` : this.content.title_text;
+        window.grecaptcha.render(this.$el.querySelector('.g-recaptcha'), { sitekey: this.RECAPTCHA_KEY, callback: this.onRecaptchaChange});
     },
     created: function() { 
         this.content = this.external_content && Object.keys(this.external_content).length > 0 ? this.external_content : this.content;
@@ -112,7 +114,9 @@ export default {
                             <textarea id="message" v-model="message" class="form-control form-control-lg w-full uppercase" rows="7" placeholder="Mensage.."></textarea>
                         </div>
 
-                        <div class="g-recaptcha" data-sitekey="6LeDV5koAAAAANpo0UlcM7X8SrYej7zuRngUqRmD" @change="onRecaptchaChange"></div>
+                        <div class="form-group message w-full my-2 items-center justify-center flex">
+                            <div class="g-recaptcha" :data-sitekey="RECAPTCHA_KEY" @g-recaptcha-response="onRecaptchaChange"></div>
+                        </div>
 
 
                         <div v-if="error_msg" class="text-center my-2 w-full flex items-center justify-center bg-red-500 text-black break-word rounded-xl p-2">

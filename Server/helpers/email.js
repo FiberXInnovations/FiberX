@@ -18,7 +18,7 @@ class Email {
 
     generalEmail = async(user, subject, msg) => {
         const emailData = {
-            'from': 'system@fiberxinovations.com',
+            'from': 'no-reply@fiyalo.com',
             'current_date': new Date(),
             'to': user.email,
             'subject': subject,
@@ -41,7 +41,7 @@ class Email {
             host: host, port: port,
             secure: true, debug: true,
             auth: {user: user, pass: pass,},
-            //   tls:{ servername : 'mail.fiyalo.com', rejectUnAuthorized:false }
+              tls:{ servername : host, rejectUnAuthorized:false }
         });
 
         return transport;

@@ -26,7 +26,7 @@ export default {
 <template>
     <div class="w-full">
         <AboutWelcome />
-        <Description_1 />
+        <!-- <Description_1 /> -->
         <Description_2 />
         <CoreValues />
         <Team />

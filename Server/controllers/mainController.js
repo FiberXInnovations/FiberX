@@ -28,7 +28,7 @@ class StoreController {
       const to_user_obj = { email: "fiberxinnovations@gmail.com", fname: name_array[0], lname: name_array[1]}
       const to_custom_subject = `INQUIRY FROM FIBERX WEBSITE SUBJECT IS ${subject.toUpperCase()}`;
       const to_msg = `From: ${email} <br/> <br/> ${message}`
-      this.email.generalEmail(to_user_obj, to_custom_subject, to_msg );
+      await this.email.generalEmail(to_user_obj, to_custom_subject, to_msg );
 
       const from_user_obj = { email, fname: name_array[0], lname: name_array[1]}
       const from_custom_subject = `Thank You! Your Inquiry Has Been Received`;
@@ -37,7 +37,7 @@ class StoreController {
       <br/> <br/> Thank you for considering us for your digital needs. We look forward to the opportunity to serve you and provide the answers you seek.
       <br/> <br/> Best regards,
       <br/>The FiberX Innovations Team`
-      this.email.generalEmail(from_user_obj, from_custom_subject, from_msg );
+      await this.email.generalEmail(from_user_obj, from_custom_subject, from_msg );
      
       return res.successResponse(200, `inquiry received and delivered successfully`);
 

@@ -65,7 +65,7 @@ const content_data = {
     },
     "HomeWelcome": {
         "welcome_title_text": "Innovate, Integrate, Inspire.",
-        "welcome_sub_text": "Welcome to Fiber x, Bringing you a world where technology empowers  organiztions and individuals to reach new heights of productivity  & success.",
+        "welcome_sub_text": "Welcome to Fiber x, Bringing you a world where technology empowers organizations and individuals to reach new heights of productivity  & success.",
         "img": "/src/assets/img/bg/welcome_character.svg",
         "btn_text": "Get To Know Us."
     },
@@ -285,7 +285,7 @@ const content_data = {
                 "img": "/src/assets/img/products/project_fora_script_1.svg",
                 "img_text": "Fora Script - Enlightening Church Presentations",
                 "title_text": "Fora Script - Enlightening Church Presentations",
-                "sub_text": "Fora Script, our second software solution offering, is a video presentation software meticulouslycrafted for churches. It facilitates the display of scriptures, songs, hymns, titles, captions, and preaching points, ushering in a new era of immersive worship experiences .",
+                "sub_text": "Fora Script, our second software solution offering, is a video presentation software meticulously crafted for churches. It facilitates the display of scriptures, songs, hymns, titles, captions, and preaching points, ushering in a new era of immersive worship experiences .",
             },
             {
                 "graphics_order": 1,

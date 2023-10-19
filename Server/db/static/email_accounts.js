@@ -1,10 +1,10 @@
 "use strict";
 require('dotenv').config('../../.env');
 const config = process.env;
-const fb_link = 'https://www.facebook.com/groups/744254577177650';
-const twitter_link = 'https://twitter.com/Fiyalo';
-const telegram_link= 'https://t.me/+_mSTUHTtE441YThk';
-const ig_link = 'https://www.instagram.com/fiyalo_/';
+const fb_link = 'https://www.facebook.com/profile.php?id=61552583040655';
+const twitter_link = 'https://twitter.com/FiberxInnovate';
+const telegram_link= 'https://t.me/fiberxinnovations';
+const ig_link = 'https://www.instagram.com/fiberx_innovations';
 const yt_link = 'https://www.youtube.com/channel/UClZRR5ZxcbUimfYFpuUd4jQ';
 const fb_img_link = 'https://storage.googleapis.com/fiyalo_staging/social_media_icons/fb_1.png';
 const twitter_img_link = 'https://storage.googleapis.com/fiyalo_staging/social_media_icons/tw_1.png';

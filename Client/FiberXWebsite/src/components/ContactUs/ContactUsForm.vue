@@ -12,7 +12,7 @@ export default {
             content: this.$root.content_data.ContactUsForm,
             full_name: "", email: "", subject: "", message: "",
             error_msg: "", title_text: "", recaptchaToken: null,
-            RECAPTCHA_KEY: "6LcNI60oAAAAANjEzNHSYEcDUd9OBv7uan2-R9YN"
+            RECAPTCHA_KEY: "6Led_rQoAAAAAD6ZhPHJ0TW3Q3z7kqprTPu5KPCG"
         };
     },
     methods: {

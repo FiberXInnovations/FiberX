@@ -99,10 +99,12 @@ class HelperFunctions {
 
   async verifyRecaptcha(token) {
     try {
+      console.log({token})
       const secretKey = this.config.RECAPTCHA_SECRET_KEY;
       const response = await axios.post('https://www.google.com/recaptcha/api/siteverify', null, {
         params: { secret: secretKey, response: token,},
       });
+      console.log(response.data )
       return response.data.success;
     } catch (error) {
       console.error('reCAPTCHA verification failed:', error);

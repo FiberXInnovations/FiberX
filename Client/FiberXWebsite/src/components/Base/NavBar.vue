@@ -1,16 +1,7 @@
 <script lang="js">
     import { RouterLink } from 'vue-router';
-
     export default {
-        props: {
-            y: Number,
-            white_page: Boolean,
-        },
-        data() { 
-          return {
-            content: this.$root.content_data.NavBar
-          }
-        }
+        props: { y: Number, white_page: Boolean, content: Object },
     }
 </script>
 
@@ -26,9 +17,9 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                 </svg>
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-                <ul class="flex flex-col font-bold mt-4 rounded-lg md:flex-row md:space-x-8  md:mt-0 md:border-0 md:bg-transparent">
-                    <li v-for="(item, index) in content.menu" :key="index">
+            <div class="hidden w-full md:block md:w-auto dropy-menu" id="navbar-solid-bg">
+                <ul class="flex flex-col font-bold mt-4 rounded-lg md:flex-row md:space-x-8  md:mt-0 md:border-0 md:bg-transparent border ">
+                    <li v-for="(item, index) in content.menu" :key="index" :class="(index + 1) == content.menu.length ? 'md:border-l-2 md:px-4' : ''" class="">
                         <RouterLink :to="item.link" :class="$route.name == item.name? 'text-fiberX' : 'text-white'" class="block py-2 pl-3 pr-4 hover:text-fiberX rounded md:bg-transparent md:p-0">
                             {{ item.text }}
                         </RouterLink>

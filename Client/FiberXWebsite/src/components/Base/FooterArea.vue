@@ -1,12 +1,7 @@
 <script lang="js">
     import { RouterLink } from 'vue-router';
     export default {
-        data() { 
-          return {
-            current_year: new Date().getFullYear(),
-            content: this.$root.content_data.FooterArea
-          }
-        }
+        props: { content: Object, current_year: String },
     }
 </script>
 

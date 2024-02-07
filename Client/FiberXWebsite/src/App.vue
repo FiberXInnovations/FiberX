@@ -63,13 +63,13 @@
       <Alert :state="state" :msg="msg" :status="status" />
       <Loader :state="loading" :loadingString="load_string" />
       <header>
-          <NavBar :y="y" :white_page="white_page"  />
+          <NavBar :y="y" :white_page="white_page"  :content="content.NavBar"  />
       </header>
       <main id="ScrollArea">
           <RouterView />
       </main>
       <footer>
-          <FooterArea />
+          <FooterArea  :content="content.FooterArea" :current_year="new Date().getFullYear()" />
       </footer>
       <Scroller :content="content.Scroller" />
       

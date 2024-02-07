@@ -2,7 +2,7 @@
 import ContactUsWelcome from '../components/ContactUs/ContactUsWelcome.vue';
 import ContactUsInfo from '../components/ContactUs/ContactUsInfo.vue';
 import ContactUsForm from '../components/ContactUs/ContactUsForm.vue';
-import Slogan from '../components/About/Slogan.vue';
+import Slogan from '../components/Products/Slogan.vue';
 
 
 export default {

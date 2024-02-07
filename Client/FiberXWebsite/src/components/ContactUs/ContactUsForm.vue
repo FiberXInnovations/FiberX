@@ -85,21 +85,21 @@ export default {
                             <label for="full_name" class="block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                             </label>
-                            <input type="text" id="full_name" v-model="full_name" class="form-control form-control-lg thick w-full uppercase" placeholder="Full Name">
+                            <input type="text" id="full_name" v-model="full_name" class="w-full contact-form-input text-sm font-bold uppercase" placeholder="Full Name">
                         </div>
                         <!-- email -->
                         <div class="form-group relative my-2 w-full">
                             <label for="email" class="block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             </label>
-                            <input type="email" id="email" v-model="email" class="form-control form-control-lg thick w-full uppercase" placeholder="E-mail">
+                            <input type="email" id="email" v-model="email" class="w-full contact-form-input text-sm font-bold uppercase" placeholder="E-mail">
                         </div>
                         <!-- subject -->
                         <div class="form-group relative w-full my-2">
                             <label for="subject" class="block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                             </label>
-                            <input type="text" id="subject" v-model="subject" class="form-control form-control-lg thick w-full uppercase" placeholder="Subject/Title">
+                            <input type="text" id="subject" v-model="subject" class="w-full contact-form-input text-sm font-bold uppercase" placeholder="Subject/Title">
                         </div>
                         <!-- message -->
                         <div class="form-group message w-full my-2">

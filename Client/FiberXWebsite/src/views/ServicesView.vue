@@ -1,19 +1,19 @@
 <script>
-import ServicesWelcome from '../components/Services/ServicesWelcome.vue';
+import Welcome from '../components/Services/Welcome.vue';
 import ServicesList from '../components/Services/ServicesList.vue';
 import ContactUsForm from '../components/ContactUs/ContactUsForm.vue';
 
 export default {
     created: function(){ this.$root.white_page = true; },
     mounted: function() { this.$root.C_METH.scrollToTop(); },
-    components: { ServicesWelcome, ServicesList, ContactUsForm },
+    components: { Welcome, ServicesList, ContactUsForm },
 }
 </script>
 
 <template>
-    <div class="w-full">
-        <ServicesWelcome />
+   <section id="ServicesPage" class="w-full h-auto">
+        <Welcome :content="$root.content_data.ServicesPage.Welcome" />
         <ServicesList :content="$root.content_data.ServicesPage.ServicesList" />
         <ContactUsForm :content="$root.content_data.ContactPage.ContactUsForm" />
-    </div>
+    </section>
 </template>

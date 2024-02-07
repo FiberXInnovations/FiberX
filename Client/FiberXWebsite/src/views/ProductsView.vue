@@ -1,32 +1,20 @@
 <script>
-import ProductWelcome from '../components/Products/ProductWelcome.vue';
+import Welcome from '../components/Products/Welcome.vue';
 import ExploreProducts from '../components/Products/ExploreProducts.vue';
 import ProductList from '../components/Products/ProductList.vue';
-import Slogan from '../components/About/Slogan.vue';
-
+import Slogan from '../components/Products/Slogan.vue';
 
 export default {
-    data() { 
-        return { 
-        }
-    },
-    methods: {
-
-    },
-    created: async function() { },
-    mounted: function() { 
-        const mainSection = document.getElementById('ScrollArea');
-        mainSection.scrollTo(0, 0);
-    },
-    components: { ProductWelcome, ExploreProducts, ProductList, Slogan },
+    mounted: function() { this.$root.C_METH.scrollToTop(); },
+    components: { Welcome, ExploreProducts, ProductList, Slogan },
 }
 </script>
 
 <template>
-    <div class="w-full">
-        <ProductWelcome />
-        <ExploreProducts />
-        <ProductList />
-        <Slogan />
-    </div>
+     <section id="ProductsPage" class="w-full h-auto">
+        <Welcome :content="$root.content_data.ProductsPage.Welcome" />
+        <!-- <ExploreProducts :content="$root.content_data.ProductsPage.ExploreProducts" /> -->
+        <ProductList :content="$root.content_data.ProductsPage.ProductList" />
+        <Slogan :content="$root.content_data.ProductsPage.Slogan" />
+     </section>
 </template>

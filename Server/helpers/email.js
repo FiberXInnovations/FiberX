@@ -18,7 +18,7 @@ class Email {
 
     generalEmail = async(user, subject, msg) => {
         const emailData = {
-            'from': 'no-reply@fiyalo.com',
+            'from': 'no-reply@fiberxinnovations.com',
             'current_date': new Date(),
             'to': user.email,
             'subject': subject,

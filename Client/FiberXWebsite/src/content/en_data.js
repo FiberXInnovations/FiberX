@@ -16,9 +16,8 @@ const content_data = {
         "FooterArea": {
             "add_to": ["social_menu"],
             "page_menu": [
-                {"text": "Legal", "link": "/about", "name": "About"},
+                {"text": "Legal", "link": "/legal", "name": "Legal"},
                 {"text": "Services", "link": "/services", "name": "Services"},
-                {"text": "Support", "link": "/products", "name": "Products"},
                 {"text": "Contact", "link": "/contact_us", "name": "Contact"}
             ],
             "social_menu": [
@@ -275,6 +274,35 @@ const content_data = {
         },
     },
     "ContactPage": {
+        "Welcome": {
+            "title_text": "Get In Touch!",
+            "sub_text": "Caring for our clients is at the heart of what we do. Feel free to reach out with your inquiries, suggestions, or feedback, and we'll respond promptly. Let's start a conversation, and together, we'll navigate the digital realm.",
+            "img": "/src/assets/img/bg/contact_welcome.svg",
+        },
+        "ContactUsInfo": {
+            "title_text": "Connect with Us",
+            "sub_text": "Here's how to get in touch with FiberX Innovations. Whether you prefer to drop us a message, give us a call, or visit our office, we're always here to assist you. Feel free to reach out and let's start a conversation.",
+            "infos": [
+                {
+                    "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z' /><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z' /></svg>",
+                    "title_text": "Address",
+                    "link": "https://www.google.com/maps?qPlot+904,+sector+F+FHA+Lugbe,+Abuja+Nigeria",
+                    "sub_text": "Plot 904 sector F FHA Lugbe."
+                },
+                {
+                    "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3' /></svg>",
+                    "title_text": "Phone",
+                    "link": "tel:+234 809 141 4443.",
+                    "sub_text": "+234 809 141 4443."
+                },
+                {
+                    "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75' /></svg>",
+                    "title_text": "Email",
+                    "link": "mailto:fiberxinnovations@gmail.com",
+                    "sub_text": "fiberxinnovations@gmail.com"
+                }
+            ] 
+        },
         "ContactUsForm": {
             "title_text": "Talk to Us",
             "sub_text": "",
@@ -290,53 +318,71 @@ const content_data = {
             "btn_text": "Go Back Home"
         }
     },
-    "ProductWelcome": {
-        "title_text": "Our Products Portfolio!",
-        "sub_text": "Discover a world of possibilities at FiberX Innovations. Our product offerings are designed to elevate your digital experience and empower you with cutting-edge solutions. Whether you're seeking innovative software products, high-quality hardware solutions, or a range of professional services, you've come to the right place.",
-        "img": "/src/assets/img/bg/welcome_character.svg"
-    },
-    "ContactUsWelcome": {
-        "title_text": "Get in Touch",
-        "sub_text": "Caring for our clients is at the heart of what we do. Feel free to reach out with your inquiries, suggestions, or feedback, and we'll respond promptly. Let's start a conversation, and together, we'll navigate the digital realm.",
-        "img": "/src/assets/img/bg/welcome_character.svg"
-    },
-   
-
-    
-    
     "ServicesForm": {
         "title_text": "Service Inquiry Form",
         "sub_text": "Have questions about our services or need more information? Fill out the form below, and our team will be happy to assist you. Your journey with FiberX Innovations starts here.",
         "img": "/src/assets/img/bg/contact_us_form_1.svg",
         
     },
-    
-    
-    "ContactUsInfo": {
-        "title_text": "Connect with Us",
-        "sub_text": "Here's how to get in touch with FiberX Innovations. Whether you prefer to drop us a message, give us a call, or visit our office, we're always here to assist you. Feel free to reach out and let's start a conversation.",
-        "img": "/src/assets/img/bg/semi_colon_1.svg",
-        "infos": [
-            {
-                "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z' /><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z' /></svg>",
-                "title_text": "Address",
-                "link": "",
-                "sub_text": "Plot 904 sector F FHA Lugbe."
-            },
-            {
-                "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3' /></svg>",
-                "title_text": "Phone",
-                "link": "tel:+234 809 141 4443.",
-                "sub_text": "+234 809 141 4443."
-            },
-            {
-                "icon": "<svg class='w-full h-full' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75' /></svg>",
-                "title_text": "Email",
-                "link": "mailto:fiberxinnovations@gmail.com",
-                "sub_text": "fiberxinnovations@gmail.com"
-            }
-        ]
-    },
+    "LegalPage": {
+        "Welcome": {
+            "title_text":  "Legal Information",
+            "sub_text": "Explore FiberX Innovations' legal information, including our Terms of Service, Privacy Policy, Cookies Policy, Disclaimer, and contact details. Understand the rules and regulations governing the use of our website and the protection of your privacy.",
+            "path": [
+                {"text": "Legal Information"}
+            ]
+        },
+        "Content": {
+            "title_text": "Legal Information",
+            "sub_text": "Please read and agree to our terms and conditions before using our services. Your continued use of our platform implies your acceptance of these terms.",
+            "info": [
+                    {
+                        "title_text": "1. Legal Information",
+                        "sub_text": "Understand the rules and regulations governing our website."
+                    },
+                    {
+                        "title_text": "2. Terms of Service",
+                        "sub_text": "Welcome to FiberX Innovations! These Terms of Service outline the rules and regulations for the use of our website, located at <a href='https://fiberxinnovations.com' class='underline font-bold'>FiberX Innovations</a><br/><br/> By accessing this website, we assume you accept these terms and conditions. Do not continue to use FiberX Innovations' website if you do not agree to take all of the terms and conditions stated on this page."
+                    },
+                    {
+                        "title_text": "3. Privacy Policy",
+                        "sub_text": "Your privacy is important to us. It is FiberX Innovations' policy to respect your privacy regarding any information we may collect from you across our website, <a href='https://fiberxinnovations.com' class='underline font-bold'>FiberX Innovations</a>, and other sites we own and operate."
+                    },
+                    {
+                        "title_text": "4. Cookies Policy",
+                        "sub_text": "FiberX Innovations uses cookies to improve your experience on our website. By continuing to use our site, you consent to the use of cookies in accordance with our Cookies Policy."
+                    },
+                    {
+                        "title_text": "",
+                        "sub_text": "Cookies are small files stored on your device when you visit a website. They help improve website functionality and provide valuable analytics about site usage. <br />We use both session and persistent cookies on our website. Session cookies are temporary and are deleted when you close your browser, while persistent cookies remain on your device for a longer period."
+                    },
+                    {
+                        "title_text": "",
+                        "sub_text": "The types of cookies we use include:<br/> - Essential cookies: These are necessary for the website to function properly.<br/> - Analytical cookies: These help us analyze how users interact with our website, allowing us to improve its performance and usability.<br/> - Functional cookies: These enable additional functionality, such as remembering your preferences.<br/> - Targeting cookies: These track your browsing habits to deliver targeted advertising based on your interests."
+                    },
+                    {
+                        "title_text": "",
+                        "sub_text": "You can control and manage cookies through your browser settings. However, please note that disabling cookies may affect the functionality of our website.<br />By continuing to use our website, you agree to our use of cookies as described in this policy."
+                    },
+                    {
+                        "title_text": "5. Disclaimer",
+                        "sub_text": "The information contained on FiberX Innovations' website is for general information purposes only. We assume no responsibility for errors or omissions in the contents on the website.<br/>While we strive to keep the information up to date and accurate, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or the information, products, services, or related graphics contained on the website for any purpose."
+                    },
+                    {
+                        "title_text": "",
+                        "sub_text": "Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage, including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website."
+                    },
+                    {
+                        "title_text": "",
+                        "sub_text": "Through this website, you are able to link to other websites that are not under the control of FiberX Innovations. We have no control over the nature, content, and availability of those sites. The inclusion of any links does."
+                    },
+                    {
+                        "title_text": "6. Contact",
+                        "sub_text": "If you have any questions about our legal page or the practices of this site, please <a class='underline font-bold' href='/contact_us'>contact us</a>."
+                    }
+            ]
+        }
+    }
    
     
     

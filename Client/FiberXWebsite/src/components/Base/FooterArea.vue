@@ -1,7 +1,7 @@
 <script lang="js">
     import { RouterLink } from 'vue-router';
     export default {
-        props: { content: Object, current_year: String },
+        props: { content: Object, current_year: Number },
     }
 </script>
 

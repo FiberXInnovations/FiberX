@@ -1,32 +1,19 @@
 <script>
-import ContactUsWelcome from '../components/ContactUs/ContactUsWelcome.vue';
+import Welcome from '../components/ContactUs/Welcome.vue';
 import ContactUsInfo from '../components/ContactUs/ContactUsInfo.vue';
 import ContactUsForm from '../components/ContactUs/ContactUsForm.vue';
-import Slogan from '../components/Products/Slogan.vue';
-
 
 export default {
-    data() { 
-        return { 
-        }
-    },
-    methods: {
-
-    },
-    created: async function() { },
-    mounted: function() { 
-        const mainSection = document.getElementById('ScrollArea');
-        mainSection.scrollTo(0, 0);
-    },
-    components: { ContactUsWelcome, ContactUsInfo, ContactUsForm, Slogan },
+    created: function(){ this.$root.white_page = true; },
+    mounted: function() { this.$root.C_METH.scrollToTop(); },
+    components: { Welcome, ContactUsInfo, ContactUsForm },
 }
 </script>
 
 <template>
-    <div class="w-full">
-        <ContactUsWelcome />
-        <ContactUsInfo />
-        <ContactUsForm />
-        <Slogan />
-    </div>
+    <section id="ContactPage" class="w-full h-auto">
+        <Welcome :content="$root.content_data.ContactPage.Welcome" />
+        <ContactUsInfo :content="$root.content_data.ContactPage.ContactUsInfo" />
+        <ContactUsForm :content="$root.content_data.ContactPage.ContactUsForm" />
+    </section>
 </template>

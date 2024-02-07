@@ -4,6 +4,7 @@ import AboutView from "../views/AboutView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ProductsView from "../views/ProductsView.vue";
 import ContactUsView from "../views/ContactUsView.vue";
+import LegalView from "../views/LegalView.vue";
 import PageNotFoundView from "../views/PageNotFoundView.vue";
 
 
@@ -26,19 +27,25 @@ const router = createRouter({
       path: "/services",
       name: "Services",
       component: ServicesView,
-      meta: { title: "Our Services - Elevate Your Digital Experience", description: "Explore the array of services offered by FiberX Innovations. From innovative software products and cutting-edge hardware solutions to expert IT consultation, training, and dedicated customer support, we're here to empower your digital journey. Find out how we can transform your world through technology."}
+      meta: { title: "Services - Elevate Your Digital Experience", description: "Explore the array of services offered by FiberX Innovations. From innovative software products and cutting-edge hardware solutions to expert IT consultation, training, and dedicated customer support, we're here to empower your digital journey. Find out how we can transform your world through technology."}
     },
     {
       path: "/products",
       name: "Products",
       component: ProductsView,
-      meta: { title: "Our Products - Pioneering Technology Solutions", description: "Discover the future of technology through FiberX Innovations' innovative software products and cutting-edge hardware solutions. We offer a diverse range of solutions designed to elevate your digital experience. Explore our portfolio and unlock new possibilities in the world of IT."}
+      meta: { title: "Products - Pioneering Technology Solutions", description: "Discover the future of technology through FiberX Innovations' innovative software products and cutting-edge hardware solutions. We offer a diverse range of solutions designed to elevate your digital experience. Explore our portfolio and unlock new possibilities in the world of IT."}
     },
     {
       path: "/contact_us",
       name: "Contact",
       component: ContactUsView,
-      meta: { title: "Contact FiberX Innovations - Let's Connect", description: "Reach out to us at FiberX Innovations. We're here to assist, answer your questions, and guide you on your digital journey. Whether you have inquiries about our services, need support, or just want to say hello, we're only a message away. Let's start a conversation."}
+      meta: { title: "Contact Us - Let's Connect", description: "Reach out to us at FiberX Innovations. We're here to assist, answer your questions, and guide you on your digital journey. Whether you have inquiries about our services, need support, or just want to say hello, we're only a message away. Let's start a conversation."}
+    },
+    {
+      path: "/legal",
+      name: "Legal",
+      component: LegalView,
+      meta: { title: "Legal Information", description: "Explore FiberX Innovations' legal information, including our Terms of Service, Privacy Policy, Cookies Policy, Disclaimer, and contact details. Understand the rules and regulations governing the use of our website and the protection of your privacy"}
     },
     {
       path: "/:pathMatch(.*)*",

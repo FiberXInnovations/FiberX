@@ -7,7 +7,7 @@ export default {
 </script>
 <template>
      <section id="CoreValues" class="w-full h-[85vh] relative bg-[#21201D] overlfow-hidden border-b">
-        <div class="w-full px-[10%] h-full pt-[90px]">
+        <div class="w-full px-[10%] h-full flex items-center justify-center py-4">
             <div class="flex flex-col items-center w-full justify-start p-4 h-full relative">
                 <h3 class="lg:text-[49px] md:text-[40px] text-[30px] text-white font-black w-full break-word text-center">{{ content.title_text }}</h3>
                 <p class="w-full break-word mt-4 text-center text-fiberX-sub-text md:text-lg text-[12px]">{{  content.sub_text }}</p>

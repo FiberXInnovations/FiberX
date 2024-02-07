@@ -62,7 +62,7 @@ export default {
                 const dmsg                      = status == 'success' ? 'We would be in touch with you shortly. Thank you and have a great day.': 'Sorry, something went wrong please try again later.'
                 this.loading                    = false;
 
-                this.$root.showAlert(status, dmsg, 2000, false, true);
+                this.$root.showAlert(status, dmsg, 2000, true, true);
                 
             }
         }

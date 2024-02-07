@@ -23,7 +23,7 @@ export default {
         </div>
         <div class="w-full items-center justify-center flex flex-col grid md:grid-cols-3 grid-cols-1 gap-8 md:px-[10%] px-[10%] my-4">
             
-            <div v-for="(service, index) in content.services_list"  @click="scrollToSection('Services', 'ContactUsForm', service.text)" 
+            <div v-for="(service, index) in content.services_list" :key="index"  @click="scrollToSection('Services', 'ContactUsForm', service.text)" 
             class="w-full h-[210px] shadow-lg rounded-lg flex flex-col items-center justify-center p-4 border cursor-pointer hover:scale-105">
                 <span class="w-16 h-16 text-fiberX my-4" v-html="service.icon"></span>
                 <span class="text-lg break-word w-full text-center my-2 text-fiberX-main font-bold">{{ service.text }}</span>

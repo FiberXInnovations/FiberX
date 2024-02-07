@@ -42,6 +42,7 @@
 
 *{
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 #AppBody, .welcome-bg {
@@ -99,7 +100,7 @@ footer {
 .text-fiberX-sub-text {
   color: #8A8A8A;
 }
-.text-fiberX-slogan-text { color: #8A8A8A }
+.text-fiberX-sloganr-text { color: #8A8A8A }
 
 .contact-form-input {
   background-color: #f2f6f8;
@@ -119,6 +120,7 @@ footer {
 	
 .message .form-control {
     padding: .5rem 1.8rem;
+    border-radius: 2rem;
 }
 
 ::placeholder {

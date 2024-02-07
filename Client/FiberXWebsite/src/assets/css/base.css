@@ -207,10 +207,8 @@ textarea {
 .swiper-initialized { padding: 2.5rem 0rem;}
 
 .semi{
-  /* background-image: inherit; */
   z-index: 100;
   background-color: inherit;
-  /* background-position: right center; */
   background-repeat: inherit;
   background-size: inherit;
 }

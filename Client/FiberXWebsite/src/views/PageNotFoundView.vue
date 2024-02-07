@@ -3,24 +3,14 @@ import NotFound from '../components/404/NotFound.vue';
 
 
 export default {
-    data() { 
-        return { 
-        }
-    },
-    methods: {
-
-    },
-    created: async function() { },
-    mounted: function() { 
-        const mainSection = document.getElementById('ScrollArea');
-        mainSection.scrollTo(0, 0);
-    },
+    created: function(){ this.$root.white_page = true; console.log(window.innerHeight) },
+    mounted: function() { this.$root.C_METH.scrollToTop(); },
     components: { NotFound },
 }
 </script>
 
 <template>
-    <div class="w-full">
-        <NotFound />
-    </div>
+    <section id="PageNotFoundPage" class="w-full h-auto">
+        <NotFound :content="$root.content_data.PageNotFoundPage.NotFound" />
+    </section>
 </template>

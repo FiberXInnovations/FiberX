@@ -4,6 +4,7 @@
     export default {
         props: {
             y: Number,
+            white_page: Boolean,
         },
         data() { 
           return {
@@ -14,7 +15,7 @@
 </script>
 
 <template>   
-    <nav :class="y <= 0? 'bg-transparent' : 'bg-[#21201D]'" class="min-h-[90px] fixed w-screen border-b border-gray-400 z-[90]">
+    <nav :class="y <= 0 && !white_page ? 'bg-transparent shadow-2xl' : 'bg-[#21201D] border-b border-gray-400'" class="min-h-[90px] fixed w-screen z-[90]">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <RouterLink to="/" class="flex items-center">
                 <img :src="content.logo.img" class="h-16 mr-3" :alt="content.logo.title" />
@@ -28,7 +29,7 @@
             <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                 <ul class="flex flex-col font-bold mt-4 rounded-lg md:flex-row md:space-x-8  md:mt-0 md:border-0 md:bg-transparent">
                     <li v-for="(item, index) in content.menu" :key="index">
-                        <RouterLink :to="item.link" :class="$route.name == item.name? 'text-[#FFCC00]' : 'text-white'" class="block py-2 pl-3 pr-4 hover:text-[#FFCC00] rounded md:bg-transparent md:p-0">
+                        <RouterLink :to="item.link" :class="$route.name == item.name? 'text-fiberX' : 'text-white'" class="block py-2 pl-3 pr-4 hover:text-fiberX rounded md:bg-transparent md:p-0">
                             {{ item.text }}
                         </RouterLink>
                     </li>

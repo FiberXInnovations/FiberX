@@ -3,21 +3,9 @@ import ServicesWelcome from '../components/Services/ServicesWelcome.vue';
 import ServicesList from '../components/Services/ServicesList.vue';
 import ContactUsForm from '../components/ContactUs/ContactUsForm.vue';
 
-
 export default {
-    data() { 
-        return { 
-            external_content: this.$root.content_data.ServicesForm,
-        }
-    },
-    methods: {
-
-    },
-    created: async function() { },
-    mounted: function() { 
-        const mainSection = document.getElementById('ScrollArea');
-        mainSection.scrollTo(0, 0);
-    },
+    created: function(){ this.$root.white_page = true; },
+    mounted: function() { this.$root.C_METH.scrollToTop(); },
     components: { ServicesWelcome, ServicesList, ContactUsForm },
 }
 </script>
@@ -25,7 +13,7 @@ export default {
 <template>
     <div class="w-full">
         <ServicesWelcome />
-        <ServicesList />
-        <ContactUsForm :external_content="external_content" />
+        <ServicesList :content="$root.content_data.ServicesPage.ServicesList" />
+        <ContactUsForm :content="$root.content_data.ContactPage.ContactUsForm" />
     </div>
 </template>

@@ -1,23 +1,17 @@
 <script lang="js">
 
 export default {
-    data() { 
-        return {
-            content: this.$root.content_data.HomeWelcome,
-
-        }
-    }
+    props: { content: Object }
 }
 </script>
 <template>
-    <section id="HomeWelcome" class="w-full h-[85vh]">
-        <div class="mx-auto container h-full pt-[90px]">
-            <div class="flex flex-col items-center w-full justify-center p-4 h-full relative">
+    <section id="Welcome" :class="$root.y <= 0 ? 'bg-transparent' : 'welcome-bg'" class="w-full h-[85vh] z-[2] relative">
+        <div class="mx-auto container h-full pt-[100px] h-[90%]">
+            <div class="flex flex-col items-center w-full justify-center p-4 h-full relative rounded-b-lg">
                 <h1 class="font-black text-white md:text-[52px] text-[25px] text-center z-[2]">
                     {{  content.welcome_title_text }}
                 </h1>
-                <p class="text-[#AEAEAE] text-center font-medium text-sm px-4 lg:px-[25%] md:px-[25%] z-[2]">
-                    {{ content.welcome_sub_text }}
+                <p v-html="content.welcome_sub_text" class="text-[#AEAEAE] text-center font-medium text-sm px-4 lg:px-[29%] md:px-[25%] z-[2]">
                 </p>
                 <div class="w-full flex items-center justify-center p-2">
                     <button @click="$router.push('/about')"  type="button" class="btn btn-primary flex items-center justify-center capitalize">
@@ -32,5 +26,6 @@ export default {
                 </div>
             </div>
         </div>
+        <!-- <div  class="semi w-full h-[10%] rounded-b-full absolute -bottom-[67px] md:block hidden"></div> -->
     </section>
 </template>

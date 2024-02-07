@@ -2,6 +2,7 @@
     import { RouterView } from 'vue-router';
     import { content_data } from './content/en_data';
     import HelperFunctions from './utils/helpers';
+    import CommonMethods from './utils/common_methods';
 
     import Loader from './components/Base/Loader.vue';
     import Alert from './components/Base/Alert.vue';
@@ -13,9 +14,9 @@
     export default {
         data() { 
           return {
-              content_data,
+              content_data, C_METH: new CommonMethods(),
               hp: new HelperFunctions(), content: content_data.App,
-              loading: false, state: false, modal_state: false,
+              loading: false, state: false, modal_state: false, white_page: false,
               msg: '', status : '', modal_status: '', 
               load_string : 'LOADING', store_id: 'STR-00001',
               y: 0,
@@ -51,6 +52,7 @@
           const mainSection = document.getElementById('ScrollArea');
           const vim = this;
           mainSection.addEventListener('scroll', function() { vim.y = mainSection.scrollTop; });
+
         }
     }
 </script>
@@ -61,7 +63,7 @@
       <Alert :state="state" :msg="msg" :status="status" />
       <Loader :state="loading" :loadingString="load_string" />
       <header>
-          <NavBar :y="y"  />
+          <NavBar :y="y" :white_page="white_page"  />
       </header>
       <main id="ScrollArea">
           <RouterView />
@@ -69,7 +71,7 @@
       <footer>
           <FooterArea />
       </footer>
-      <Scroller />
+      <Scroller :content="content.Scroller" />
       
   </section>
 </template>

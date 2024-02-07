@@ -22,16 +22,16 @@ export default {
                     {{ content.sub_text }}
                 </p>
                 <div class="flex w-full items-center justify-center grid md:grid-cols-3 grid-cols-3 gap-4 mt-2 h-[350px]">
-                    <div v-for="(item, index) in content.infos" :key="index" class="flex flex-col items-center justify-center p-4 rounded-lg bg-[#21201D] md:h-auto h-[200px] text-[#FFCC00] scroller hover:mb-12">
+                    <div v-for="(item, index) in content.infos" :key="index" class="flex flex-col items-center justify-center p-4 rounded-lg bg-[#21201D] md:h-auto h-[200px] text-fiberX scroller hover:mb-12">
                         <div class="w-[70px] h-[70px] flex items-center justify-center" v-html="item.icon"></div>
                         <span class="text-lg font-bold mt-2 text-white">
                             {{ item.title_text }}
                         </span>
 
-                        <a :href="item.link" target="_blank" class="md:block hidden my-2 hover:underline w-full text-center py-4 break-all text-white hover:text-[#FFCC00]">
+                        <a :href="item.link" target="_blank" class="md:block hidden my-2 hover:underline w-full text-center py-4 break-all text-white hover:text-fiberX">
                             {{  item.sub_text }}
                         </a>
-                        <a :href="item.link" target="_blank" class="md:hidden block my-2 hover:underline w-full text-center py-4 break-all text-sm text-white hover:text-[#FFCC00]">
+                        <a :href="item.link" target="_blank" class="md:hidden block my-2 hover:underline w-full text-center py-4 break-all text-sm text-white hover:text-fiberX">
                             Click Here
                         </a>
                     </div>

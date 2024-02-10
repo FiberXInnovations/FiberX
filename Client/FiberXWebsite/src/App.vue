@@ -72,6 +72,5 @@
           <FooterArea  :content="content.FooterArea" :current_year="new Date().getFullYear()" />
       </footer>
       <Scroller :content="content.Scroller" />
-      
   </section>
 </template>

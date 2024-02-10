@@ -25,7 +25,7 @@ export default {
 }
 </script>
 <template>
-    <section id="Welcome" class="w-full h-[85vh] z-[1] relative bg-white block  items-center justify-center overlfow-hidden border-b">
+    <section id="Welcome" class="w-full h-[85vh] z-[1] relative bg-white block  items-center justify-center overlfow-hidden">
         <div class="w-full h-full p-0 pt-[98px]">
             <div class="w-full h-full grid md:grid-cols-2 grid-cols-1 gap-2 p-0">
                 <div class="w-full h-full overflow-hidden flex flex-col md:pr-0 md:pl-[15%] px-[10%] items-center justify-center md:order-1 order-2">
@@ -33,17 +33,17 @@ export default {
                     <p class="w-full break-word mt-4 md:text-left text-center text-fiberX-sub-text md:text-md text-[12px]">{{  content.sub_text }}</p>
                 </div>
                 
-                <div :class="slider_index ? 'p-0': 'lg:pr-[20%] md:pr-[15%] md:pl-0 px-[10%]'" class="w-full h-full overflow-hidden flex flex-col items-center justify-center md:order-2 order-1">
+                <div :class="slider_index ? 'p-0': 'pt-4'"  class="w-full h-full overflow-hidden flex flex-col items-center justify-center md:order-2 order-1">
                 
                     <div id="welcomeSlider" class="relative w-full h-full">
-                        <div class="relative h-full overflow-hidden rounded-lg">
+                        <div class="relative h-full w-full flex items-center justify-center overflow-hidden rounded-lg">
                             
 
-                            <div id="slider-1" class="hidden duration-700 ease-in-out slider">
+                            <div id="slider-1" class="hidden duration-700 ease-in-out slider w-full h-full">
                                 <img :src="content.slider[0].img" :alt="`${content.title_text} Image`" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain">
                             </div>
-                            <div id="slider-2" class="hidden duration-700 ease-in-out slider">
-                                <img :src="content.slider[1].img" :alt="`${content.title_text} Image`" class="absolute block w-8/12 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain">
+                            <div id="slider-2" class="hidden duration-700 ease-in-out slider w-full h-full">
+                                <img :src="content.slider[1].img" :alt="`${content.title_text} Image`" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain">
                             </div>
                         </div>
 

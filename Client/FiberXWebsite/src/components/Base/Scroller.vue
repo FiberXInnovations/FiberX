@@ -16,12 +16,12 @@ export default {
         },
         scrollPageDown() {
             const main = document.getElementById("ScrollArea");
-            this.$root.y = window.innerHeight * 0.85;
+            this.$root.y = window.innerHeight * 0.9;
             main.scrollTop += this.$root.y;
         },
         scrollPageUp() {
             const main = document.getElementById("ScrollArea");
-            this.$root.y = -window.innerHeight * 0.85;
+            this.$root.y = -window.innerHeight * 0.9;
             main.scrollTop += this.y;
         },
         isWindowScrollable() {

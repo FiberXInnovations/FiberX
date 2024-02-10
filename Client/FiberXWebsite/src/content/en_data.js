@@ -131,30 +131,30 @@ const content_data = {
                  {
                      "img": "/src/assets/img/core_values/innovation_1.svg",
                      "name_text": "David Matt-Ojo",
-                     "role_text": "Software Engineer"
+                     "role_text": "Founder & Software Engineer"
                  },
                  {
                      "img": "/src/assets/img/team/fadare_white.jpeg",
                      "img_2": "/src/assets/img/team/fadare_black.jpeg",
                      "name_text": "Fadare Praise",
-                     "role_text": "Business Manager"
+                     "role_text": "Founder & Business Manager"
                  },
                  {
                      "img": "/src/assets/img/team/faith_white.jpeg",
                      "img_2": "/src/assets/img/team/faith_black.jpeg",
                      "name_text": "Faith Babatunde",
-                     "role_text": "Business Manager"
+                     "role_text": "Founder & Social Relations Manager"
                  },
                  {
                      "img": "/src/assets/img/team/fortune_white.jpeg",
                      "img_2": "/src/assets/img/team/fortune_black.jpeg",
                      "name_text": "Fortune Young",
-                     "role_text": "Business Manager"
+                     "role_text": "Founder & Design Engineer"
                  },
                  {
                     "img": "/src/assets/img/core_values/innovation_1.svg",
-                    "name_text": "Rere Layi",
-                    "role_text": "Business Manager"
+                    "name_text": "Rereloluwa Olayiwola",
+                    "role_text": "Founder & Business Operations Manager"
                 },
             ]
         },

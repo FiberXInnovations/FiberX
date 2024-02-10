@@ -65,7 +65,7 @@
       <header>
           <NavBar :y="y" :white_page="white_page"  :content="content.NavBar"  />
       </header>
-      <main id="ScrollArea">
+      <main id="ScrollArea" :class="y <= 4 ? 'h-[85vh]' : 'h-[100vh]'" class="w-full">
           <RouterView />
       </main>
       <footer>

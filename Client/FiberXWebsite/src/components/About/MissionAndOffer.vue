@@ -17,8 +17,8 @@ export default {
 
             </div>
         </div>
-        <div class="w-full h-[66.67%] flex md:flex-row flex-col items-center justify-center px-[10%]">
-            <div class="md:w-6/12 md:h-full w-full h-2/6 md:order-1 order-2 flex items-center justify-center py-[5%]">
+        <div class="w-full h-[66.67%] flex md:flex-row flex-col items-center justify-center px-[10%] pt-8">
+            <div class="md:w-6/12 md:h-full w-full h-4/6 md:order-1 order-2 flex items-center justify-center py-[5%]">
                 <img class="w-full h-full object-fit" :src="content.Offer.img" :alt="content.Offer.title_text" />
             </div>
             <div class="md:w-6/12 md:h-full w-full h-4/6 md:order-2 order-1 flex items-center justify-center py-[5%] flex-col"> 

@@ -21,9 +21,9 @@ export default {
                         {{ content.btn_text }}
                     </button>
                 </div>  
-                <div class="z-[1] welcome-character hidden md:flex absolute right-[5%] bottom-[12%] items-center justify-center rounded-lg w-[250px] h-[250px]">
+                <!-- <div class="z-[1] welcome-character hidden md:flex absolute right-[5%] bottom-[12%] items-center justify-center rounded-lg w-[250px] h-[250px] hidden">
                     <img class="object-fit w-full h-full" :src="content.img" />
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- <div  class="semi w-full h-[10%] rounded-b-full absolute -bottom-[67px] md:block hidden"></div> -->

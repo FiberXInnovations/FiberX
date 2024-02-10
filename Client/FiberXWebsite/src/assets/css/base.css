@@ -58,7 +58,6 @@ header {
 }
 
 main {
-  height: 85vh !important;
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -69,11 +68,6 @@ main::-webkit-scrollbar { width: 0 !important; display: none !important; }
 main { overflow: -moz-scrollbars-none !important }
 
 main { -ms-overflow-style: none !important }
-
-footer {
-  height: 15vh !important;
-  overflow: hidden;
-}
 
 #Footer {
   background-color: transparent;
